@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/OmarVenturaP/fizzbuzz#readme",
   "devDependencies": {
-    "jest": "^28.0.2"
+    "jest": "^26.0.0"
   }
 }
