@@ -21,4 +21,24 @@ describe("Validacion de explorers con diferentes scores", () => {
         const validationExplorer = FizzbuzzService.applyValidationInExplorer(explorer15);
         expect(validationExplorer.trick).toBe("FIZZBUZZ");
     });
+    test("5. Validando numero recibido 15", () => {
+        const number = 15;
+        const validationNumber = FizzbuzzService.applyValidationInNumber(number);
+        expect(validationNumber).toBe("FIZZBUZZ");
+    });
+    test("6. Validando numero recibido 5", () => {
+        const number = 5;
+        const validationNumber = FizzbuzzService.applyValidationInNumber(number);
+        expect(validationNumber).toBe("BUZZ");
+    });
+    test("7. Validando numero recibido 3", () => {
+        const number = 3;
+        const validationNumber = FizzbuzzService.applyValidationInNumber(number);
+        expect(validationNumber).toBe("FIZZ");
+    });
+    test("8. Validando numero recibido 1", () => {
+        const number = 1;
+        const validationNumber = FizzbuzzService.applyValidationInNumber(number);
+        expect(validationNumber).toBe(1);
+    });
 });
