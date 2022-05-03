@@ -16,4 +16,9 @@ describe('Validacion de explorers con diferentes scores', () => {
         const validationExplorer = FizzbuzzService.applyValidationInExplorer(explorer5)
         expect(validationExplorer.trick).toBe("BUZZ");
     })
+    test("4. Explorer 15, score 15", () => {
+        const explorer15 = {name: "Explorer15", score: 15}
+        const validationExplorer = FizzbuzzService.applyValidationInExplorer(explorer15)
+        expect(validationExplorer.trick).toBe("FIZZBUZZ");
+    })
 })
