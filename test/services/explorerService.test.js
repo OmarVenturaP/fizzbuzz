@@ -6,4 +6,9 @@ describe('Test Explorer Service app', ()=> {
         const explorersByMission = ExplorerService.filterByMission(explorers, "node");
         expect(explorersByMission).toBeDefined();
      })
+     test('2. filter amount explorers by mission', () => {
+        const explorers = [{mission: "node"}]
+        const explorersByMission = ExplorerService.filterByMission(explorers, "node");
+        expect(explorersByMission.length).toBe(1);
+     })
 })
